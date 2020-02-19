@@ -1,0 +1,6 @@
+/_notes/*
+/.well-known/*
+/css/_notes/*
+/img/*
+/js/_notes/
+*.zip

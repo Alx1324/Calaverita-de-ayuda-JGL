@@ -1,0 +1,239 @@
+/* SCSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,700&display=swap');
+$color:rgba(0, 0, 0, 0.4);
+
+body {
+    overflow-x: hidden;
+	font-family: 'Nunito', sans-serif;
+    color: white;
+	font-weight: 300;
+    font-size:23px;
+    background:url("../img/bg-blue-blur.jpg");
+	background-position:center;
+	background-size:cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    @media (min-width:576px) {
+    }
+    @media (min-width:768px) {
+    }
+    @media (min-width:992px) {
+        font-size: 33px;
+    }
+    @media (min-width:1200px) {
+    }
+    @media (min-width:1920px) {
+    }
+}
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0.2vw 0.2vw 0 #000163, 0.3vw 0.3vw 0 #da08c4;
+}
+b, strong {
+    font-weight: 300;
+    color:#f1c800;
+}
+b {
+    text-decoration: underline;
+}
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover, &:hover > p {
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.5;
+    }
+}
+main {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    @media (min-height:1144px) {
+        height: 100vh;
+    }
+    #cabeza {
+        position: relative;
+        height: 200px;
+        img {
+            width: 450px;
+            position: absolute;
+            bottom: -140px;
+            left: 25%;
+            z-index: 1;
+            @media (min-width:992px) {
+                width: 600px;
+                bottom: -184px;
+                left: calc(100% / 2.5);
+            }
+        }
+    }
+    #flor {
+        &1, &2, &3, &4 {
+            position: absolute;
+            z-index: 2;
+            img {
+                width: 100%;
+            }
+        }
+        &1 {
+            top: -50px;
+            right: 10%;
+            filter: blur(5px);
+            img {
+                max-width: 200px;
+            }
+        }
+        &2 {
+            top: 30%;
+            right: 2%;
+            filter: blur(1px);
+            img {
+                max-width: 20px;
+                @media (min-width:992px) {
+                    max-width: 80px;
+                }
+            }
+        }
+        &3 {
+            bottom: 20%;
+            left: 7%;
+            filter: blur(5px);
+            img {
+                max-width: 50px;
+                @media (min-width:992px) {
+                    max-width: 150px;
+                }
+            }
+        }
+        &4 {
+            bottom: 40%;
+            left: 5%;
+            filter: blur(1px);
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+    section {
+        position: relative;
+        border: 70px solid transparent;
+        border-image: url('../img/border-violet.png') 33% round;
+        width: 80vw;
+        max-width: 1460px;
+        margin: auto;
+        #count-down {
+            text-align: center;
+            padding: 3vw 3vw 0;
+            background-color: #410258;
+            margin: -1px;
+            #copy {
+                width: 100%;
+                max-width: 830px;
+                margin: 5rem auto 0;
+                img {
+                    width: 100%;
+                    max-width: 200px;
+                }
+                .btn {
+                    font-size: 2rem;
+                    border: none;
+                    border-radius: 100px;
+                    background: #f1c800;
+                    padding: 10px 30px;
+                    color: #000163;
+                    cursor: pointer;
+                }
+            }
+        }
+        #izq, #der {
+            position: absolute;
+            top: 20%;
+            img {
+                width: 150px;
+                @media (min-width:992px) {
+                    width: 200px;
+                }
+            }
+        }
+        #izq {
+            left: -150px;
+        }
+        #der {
+            right: -150px;
+        }
+    }
+    #nino, #nina, #yoyo, #regalo {
+        position: absolute;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 50px;
+            @media (min-width:576px) {
+                max-width: 100px;
+            }
+            @media (min-width:768px) {
+                max-width: 150px;
+            }
+            @media (min-width:992px) {
+                max-width: 200px;
+            }
+            @media (min-width:1200px) {
+                max-width: 250px;
+            }
+            @media (min-width:1920px) {
+                max-width: 300px;
+            }
+        }
+    }
+    #nino {
+        left: 10%;
+        bottom: 0;
+        img {
+            filter:drop-shadow(3vw 0 0.3vw $color);
+        }
+    }
+    #nina {
+        right: 10%;
+        bottom: 0;
+        img {
+            filter:drop-shadow(-3vw 0 0.3vw $color);
+        }
+    }
+    #yoyo {
+        left: 0;
+        top: 100px;
+        img {
+            filter:drop-shadow(3vw 0 0.3vw $color);
+        }
+    }
+    #regalo {
+        right: 0;
+        bottom: 200px;
+        img {
+            filter:drop-shadow(-3vw 0 0.3vw $color);
+        }
+    }
+    .leaf {
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    @for $l from 1 through 20 {
+        .leaf:nth-last-child(#{$l}) {
+            filter: blur(1px);
+            top: random(80) + vh;
+            right: - random(100) + vh;
+            background-image: url('../img/leaf-' + random(3) + '.png');
+            z-index: (random(4) - 4) + 2;
+        }
+    }
+}
+

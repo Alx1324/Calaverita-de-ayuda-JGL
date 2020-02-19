@@ -1,0 +1,477 @@
+/* SCSS Document */
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,700&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 23px;
+  background: url("../img/bg-blue-blur.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 33px;
+  }
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0.2vw 0.2vw 0 #000163, 0.3vw 0.3vw 0 #da08c4;
+}
+
+b, strong {
+  font-weight: 300;
+  color: #f1c800;
+}
+
+b {
+  text-decoration: underline;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover, a:hover > p {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+}
+
+main {
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+@media (min-height: 1144px) {
+  main {
+    height: 100vh;
+  }
+}
+
+main #cabeza {
+  position: relative;
+  height: 200px;
+}
+
+main #cabeza img {
+  width: 450px;
+  position: absolute;
+  bottom: -140px;
+  left: 25%;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  main #cabeza img {
+    width: 600px;
+    bottom: -184px;
+    left: calc(100% / 2.5);
+  }
+}
+
+main #flor1, main #flor2, main #flor3, main #flor4 {
+  position: absolute;
+  z-index: 2;
+}
+
+main #flor1 img, main #flor2 img, main #flor3 img, main #flor4 img {
+  width: 100%;
+}
+
+main #flor1 {
+  top: -50px;
+  right: 10%;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+main #flor1 img {
+  max-width: 200px;
+}
+
+main #flor2 {
+  top: 30%;
+  right: 2%;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+main #flor2 img {
+  max-width: 20px;
+}
+
+@media (min-width: 992px) {
+  main #flor2 img {
+    max-width: 80px;
+  }
+}
+
+main #flor3 {
+  bottom: 20%;
+  left: 7%;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+main #flor3 img {
+  max-width: 50px;
+}
+
+@media (min-width: 992px) {
+  main #flor3 img {
+    max-width: 150px;
+  }
+}
+
+main #flor4 {
+  bottom: 40%;
+  left: 5%;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+main #flor4 img {
+  max-width: 50px;
+}
+
+main section {
+  position: relative;
+  border: 70px solid transparent;
+  -o-border-image: url("../img/border-violet.png") 33% round;
+     border-image: url("../img/border-violet.png") 33% round;
+  width: 80vw;
+  max-width: 1460px;
+  margin: auto;
+}
+
+main section #count-down {
+  text-align: center;
+  padding: 3vw 3vw 0;
+  background-color: #410258;
+  margin: -1px;
+}
+
+main section #count-down #copy {
+  width: 100%;
+  max-width: 830px;
+  margin: 5rem auto 0;
+}
+
+main section #count-down #copy img {
+  width: 100%;
+  max-width: 200px;
+}
+
+main section #count-down #copy .btn {
+  font-size: 2rem;
+  border: none;
+  border-radius: 100px;
+  background: #f1c800;
+  padding: 10px 30px;
+  color: #000163;
+  cursor: pointer;
+}
+
+main section #izq, main section #der {
+  position: absolute;
+  top: 20%;
+}
+
+main section #izq img, main section #der img {
+  width: 150px;
+}
+
+@media (min-width: 992px) {
+  main section #izq img, main section #der img {
+    width: 200px;
+  }
+}
+
+main section #izq {
+  left: -150px;
+}
+
+main section #der {
+  right: -150px;
+}
+
+main #nino, main #nina, main #yoyo, main #regalo {
+  position: absolute;
+}
+
+main #nino img, main #nina img, main #yoyo img, main #regalo img {
+  display: block;
+  width: 100%;
+  max-width: 50px;
+}
+
+@media (min-width: 576px) {
+  main #nino img, main #nina img, main #yoyo img, main #regalo img {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  main #nino img, main #nina img, main #yoyo img, main #regalo img {
+    max-width: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  main #nino img, main #nina img, main #yoyo img, main #regalo img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main #nino img, main #nina img, main #yoyo img, main #regalo img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1920px) {
+  main #nino img, main #nina img, main #yoyo img, main #regalo img {
+    max-width: 300px;
+  }
+}
+
+main #nino {
+  left: 10%;
+  bottom: 0;
+}
+
+main #nino img {
+  -webkit-filter: drop-shadow(3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+}
+
+main #nina {
+  right: 10%;
+  bottom: 0;
+}
+
+main #nina img {
+  -webkit-filter: drop-shadow(-3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(-3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+}
+
+main #yoyo {
+  left: 0;
+  top: 100px;
+}
+
+main #yoyo img {
+  -webkit-filter: drop-shadow(3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+}
+
+main #regalo {
+  right: 0;
+  bottom: 200px;
+}
+
+main #regalo img {
+  -webkit-filter: drop-shadow(-3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(-3vw 0 0.3vw rgba(0, 0, 0, 0.4));
+}
+
+main .leaf {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main .leaf:nth-last-child(1) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 79vh;
+  right: -2vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: 0;
+}
+
+main .leaf:nth-last-child(2) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 20vh;
+  right: -86vh;
+  background-image: url("../img/leaf-3.png");
+  z-index: 0;
+}
+
+main .leaf:nth-last-child(3) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 48vh;
+  right: -30vh;
+  background-image: url("../img/leaf-3.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(4) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 16vh;
+  right: -71vh;
+  background-image: url("../img/leaf-2.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(5) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 67vh;
+  right: -84vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: -1;
+}
+
+main .leaf:nth-last-child(6) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 52vh;
+  right: -93vh;
+  background-image: url("../img/leaf-3.png");
+  z-index: 1;
+}
+
+main .leaf:nth-last-child(7) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 23vh;
+  right: -30vh;
+  background-image: url("../img/leaf-3.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(8) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 70vh;
+  right: -36vh;
+  background-image: url("../img/leaf-2.png");
+  z-index: 1;
+}
+
+main .leaf:nth-last-child(9) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 27vh;
+  right: -38vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: 1;
+}
+
+main .leaf:nth-last-child(10) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 67vh;
+  right: -45vh;
+  background-image: url("../img/leaf-3.png");
+  z-index: -1;
+}
+
+main .leaf:nth-last-child(11) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 62vh;
+  right: -43vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: 1;
+}
+
+main .leaf:nth-last-child(12) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 15vh;
+  right: -21vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(13) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 66vh;
+  right: -88vh;
+  background-image: url("../img/leaf-3.png");
+  z-index: 1;
+}
+
+main .leaf:nth-last-child(14) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 22vh;
+  right: -17vh;
+  background-image: url("../img/leaf-2.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(15) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 33vh;
+  right: -72vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(16) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 32vh;
+  right: -16vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(17) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 35vh;
+  right: -46vh;
+  background-image: url("../img/leaf-1.png");
+  z-index: 2;
+}
+
+main .leaf:nth-last-child(18) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 25vh;
+  right: -47vh;
+  background-image: url("../img/leaf-2.png");
+  z-index: 1;
+}
+
+main .leaf:nth-last-child(19) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 54vh;
+  right: -12vh;
+  background-image: url("../img/leaf-2.png");
+  z-index: 1;
+}
+
+main .leaf:nth-last-child(20) {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  top: 17vh;
+  right: -35vh;
+  background-image: url("../img/leaf-2.png");
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */
